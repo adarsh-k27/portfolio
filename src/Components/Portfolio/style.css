@@ -1,0 +1,42 @@
+.protfolio__container{
+    margin-top: 3rem;
+}
+.my-works{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.my-work{
+    background-color: var(--color-bg-Variant);
+    border-radius: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+}
+.my-work .img-container{
+    margin-top: .5rem;
+}
+.my-work a{
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+/*________Media Queries Medium Devices________*/
+
+@media screen and (max-width:1024px) {
+    .my-works{
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+}
+
+/*______media Queries SmallDevices_______*/
+
+@media screen and (max-width:600px) {
+    .my-works{
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 0;
+    }
+}

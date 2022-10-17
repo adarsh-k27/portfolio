@@ -1,0 +1,64 @@
+.expieriance__container{
+    margin-top: 3rem;
+}
+.my_expieriance{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+}
+.expieriances{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem 3rem 3rem ;
+   
+}
+.expieriance_box{
+    background-color: var(--color-bg-Variant);
+    height: 90%;
+    border-radius: 1.5rem;
+}
+.expieriance_box h4{
+    text-align: center;
+    color: var(--color-primary);
+    margin-top: 1rem
+}
+.expieriance_box:hover{
+    background-color: var(--color-bg);
+}
+.box{
+    line-height: 1.5rem;
+}
+.checked{
+    color:var(--color-primary);
+    font-weight: 600;
+    font-size: large;
+    background-color: transparent;
+    display: inline;
+}
+.exp-desc{
+    color: var(--color-light);
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:1024px) {
+    .my_expieriance{
+      grid-template-columns: 1fr;
+    }
+    .expieriance_box{
+        width: 80%;
+        margin-left: 4rem;
+        padding: 1rem;
+    }
+
+}
+
+/*______media Queries SmallDevices_______*/
+
+@media screen and (max-width:600px) {
+    .expieriance_box{
+        width: 100%;
+        padding: 1rem;
+        margin-left: 0;
+    }
+}

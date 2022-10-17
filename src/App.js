@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Headers from './Components/Header'
+import Nav from './Components/Nav'
+import About from './Components/About'
+import Services from './Components/Services'
+import Expieriance from './Components/Expieriance'
+import Testimony from './Components/Testimony'
+import Footer from './Components/Footer'
+import Contacts from './Components/Contacts'
+import Portfolio from './Components/Portfolio'
+import { useEffect } from 'react'
+import { GetMyDetails } from './Collections/header'
+import {useContext} from 'react'
+import {MY_CONTEXT} from './Context'
 function App() {
+  const {state,GetDetails}=useContext(MY_CONTEXT)
+  console.log(state);
+  useEffect(()=>{
+GetMyDetails(GetDetails)
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Headers/>
+    <Nav/>
+    <About/>
+    <Expieriance/>
+    <Services/>
+    <Portfolio/>
+    <Testimony/>
+    <Contacts/>
+    <Footer/>
+    </>
   );
 }
 
