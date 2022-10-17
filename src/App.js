@@ -25,7 +25,6 @@ GetMyDetails(GetDetails)
     <Expieriance/>
     <Services/>
     <Portfolio/>
-    <Testimony/>
     <Contacts/>
     <Footer/>
     </>
